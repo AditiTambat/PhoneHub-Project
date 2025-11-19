@@ -1,0 +1,36 @@
+package com.phonehub.phonehub_backend.Service;
+
+import org.springframework.stereotype.Service;
+import com.phonehub.phonehub_backend.Entity.CartItem;
+import com.phonehub.phonehub_backend.Entity.Phone;
+import com.phonehub.phonehub_backend.Entity.User;
+import com.phonehub.phonehub_backend.Repository.CartItemRepo;
+import com.phonehub.phonehub_backend.Repository.PhoneRepository;
+import com.phonehub.phonehub_backend.Repository.UserRepository;
+
+@Service
+public class CartService {
+
+    private final CartItemRepo cartItemRepository;
+    private final UserRepository userRepository;
+    private final PhoneRepository phoneRepository;
+
+    public CartService(CartItemRepo cartItemRepository, UserRepository userRepository, PhoneRepository phoneRepository) {
+        this.cartItemRepository = cartItemRepository;
+        this.userRepository = userRepository;
+        this.phoneRepository = phoneRepository;
+    }
+
+    public CartItem addToCart(Long userId, Long phoneId) {
+        User user = userRepository.findById(userId).orElseThrow();
+        Phone phone = phoneRepository.findById(phoneId).orElseThrow();
+
+        CartItem cartItem = new CartItem();
+        cartItem.setUser(user);
+        cartItem.setPhone(phone);
+        cartItem.setQuantity(1);
+
+        return cartItemRepository.save(cartItem);
+    }
+}
+

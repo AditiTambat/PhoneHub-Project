@@ -24,7 +24,7 @@ public class DataLoader implements CommandLineRunner {
 
             User admin = new User();
             admin.setName("Admin");
-            admin.setEmail("admin@gmail.com");
+            admin.setEmail("admin@phonehub.in");
             admin.setPassword(passwordEncoder.encode("admin123")); // IMPORTANT
             admin.setRole("ADMIN");
 

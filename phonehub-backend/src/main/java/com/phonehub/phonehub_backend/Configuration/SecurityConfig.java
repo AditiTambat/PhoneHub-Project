@@ -4,6 +4,7 @@ package com.phonehub.phonehub_backend.Configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -15,13 +16,15 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable())  // Important for POST requests from Postman / frontend
+                .csrf(csrf -> csrf.disable()) 
+                .formLogin(form -> form.disable()) 
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**").permitAll()   // Allow signup/login
-                        .requestMatchers("/api/admin/**").permitAll()  // Allow admin endpoints for now
-                        .anyRequest().authenticated()                  // Protect other APIs
+                        .requestMatchers("/api/auth/**").permitAll()  // Allow signup/login 
+                        .requestMatchers("/api/admin/**").permitAll() // Allow admin endpoints for now
+                        .requestMatchers("/api/cart/**").permitAll()
+                        .anyRequest().authenticated()                  
                 )
-                .httpBasic(httpBasic -> {}); // Enable basic login for testing
+                .httpBasic(httpBasic -> {}); 
 
         return http.build();
     }
