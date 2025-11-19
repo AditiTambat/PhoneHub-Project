@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.phonehub.phonehub_backend.Repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.phonehub.phonehub_backend.Repository.PhoneRepository"/>
+    <fullyQualifiedTypeName name="com.phonehub.phonehub_backend.Entity.CartItem"/>
+    <fullyQualifiedTypeName name="com.phonehub.phonehub_backend.Entity.User"/>
+    <fullyQualifiedTypeName name="com.phonehub.phonehub_backend.Entity.Phone"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="com.phonehub.phonehub_backend.Service.CartService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+</qualifiedTypeNameHistroy>
