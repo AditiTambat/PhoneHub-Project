@@ -1,0 +1,334 @@
+/* :root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+body {
+  background: linear-gradient(to left, #76daec, #f0f0f0);
+}
+
+.iphone-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.iphone-tagline {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #555;
+}
+
+.video-container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-secondary {
+  font-size: 16px;
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+}
+.container.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.iphone-title {
+  font-size: 3rem;
+  flex-grow: 1;
+}
+
+.iphone-tagline {
+  font-size: 1.8rem;
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  .iphone-title {
+    font-size: 4rem;
+  }
+
+  .iphone-tagline {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .iphone-title {
+    font-size: 5rem;
+  }
+
+  .iphone-tagline {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-secondary {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container.d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .iphone-tagline {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .video-container {
+    margin-top: 20px;
+  }
+}
+
+.iheading h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 20px;
+  color: #333;
+}
+
+@media (max-width: 576px) {
+  .iheading h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .iheading h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .iheading h2 {
+    font-size: 3rem;
+  }
+}
+
+.ip_intro {
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.ip-prize img {
+  max-width: 100%;
+  height: 330px;
+}
+
+#ip-prize .d-flex::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  width: 350px;
+  margin: 0;
+  text-align: center;
+  background-color: #f8f9fa;
+  transition: transform 0.3s;
+}
+
+.carousel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ip-prize:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ip-heading {
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+/* android styling starts here    */
+.name {
+  font-size: 1.5rem;
+  font-family: "Ysabeau SC", serif;
+  color: #333;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .name {
+    font-size: 2.5rem;
+  }
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button-adjust {
+  margin-right: 40px;
+}
+
+@media (max-width: 576px) {
+  .button-adjust {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-secondary {
+    font-size: 15px;
+  }
+}
+
+.container-fluid {
+  padding: 10px 20px;
+}
+.row {
+  padding: 10px 0;
+}
+
+.an-heading {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .an-heading {
+    font-size: 3rem;
+  }
+}
+
+.top-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  /* background-color: #55a4b0; */
+  padding: 8px;
+}
+
+.content a {
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .content a {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}
+
+.android img {
+  width: 100%;
+  height: auto;
+}
+
+.card-section {
+  padding-top: 80px;
+  margin-top: 20px;
+}
+.card-body {
+  padding: 10px;
+}
+.card a.btn {
+  margin-top: 15px;
+}
+
+/* Footer Styling */
+footer {
+  background: #195e69;
+  color: #060606;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #adb5bd;
+}
+
+.footer i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer hr {
+  border-color: #e8ebee;
+}
+
+.footer.text-center {
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* animation for cards  */
+.animate {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

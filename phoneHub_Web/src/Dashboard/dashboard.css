@@ -1,0 +1,92 @@
+/* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: #f2f5f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #1d1f27;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul .active {
+  background: #343746;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Widgets Section */
+.dashboard-widgets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.widget {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Recent Activity */
+.recent-activity {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-widgets {
+    grid-template-columns: 1fr;
+  }
+}
